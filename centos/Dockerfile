@@ -1,7 +1,7 @@
 FROM centos:centos7
 MAINTAINER "yuanht,4paradigm.com"
 
-RUN yum install -y epel-release && yum install -y lxc && yum install -y iptables
+RUN yum update -y && yum install -y epel-release && yum install -y lxc && yum install -y iptables
 
 RUN curl -s https://get.docker.com|sh
 
